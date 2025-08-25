@@ -54,7 +54,7 @@ export default function ComingSoon() {
       <Grid size={12}>
         <Stack sx={{ gap: 1, alignItems: 'center', justifyContent: 'center' }}>
           <Box sx={{ height: { xs: 310, sm: 420 }, width: { xs: 360, sm: 'auto' }, my: 2 }}>
-            <CardMedia component="img" src={coming} alt="mantis" sx={{ height: 1 }} />
+            <CardMedia component="img" src={coming} sx={{ height: 1 }} />
           </Box>
           <Typography align="center" variant="h1">
             Coming Soon
@@ -78,7 +78,7 @@ export default function ComingSoon() {
       <Grid sx={{ width: { xs: 340, md: '40%', lg: '30%' } }} size={12}>
         <Stack sx={{ gap: 2, mt: 2 }}>
           <Typography align="center" color="text.secondary">
-            Be the first to be notified when Mantis launches.
+            Be the first to be notified when launches.
           </Typography>
           <Stack direction="row" sx={{ gap: 1 }}>
             <TextField fullWidth placeholder="Email Address" />

@@ -62,25 +62,14 @@ export default function FooterBlock({ isFull }: showProps) {
     }
   };
 
-  const frameworks = [
-    { title: 'Pro Figma UI Kit', link: 'https://codedthemes.com/item/mantis-figma-ui-kit/' },
-    { title: 'CodeIgniter', link: 'https://codedthemes.com/item/mantis-codeigniter-admin-template/' },
-    {
-      title: 'Vue',
-      link: 'https://codedthemes.com/item/mantis-vue-admin-template/'
-    },
-    {
-      title: 'Angular',
-      link: 'https://codedthemes.com/item/mantis-angular-admin-template/'
-    },
-    {
-      title: 'Bootstrap 5',
-      link: 'https://codedthemes.com/item/mantis-bootstrap-admin-dashboard/'
-    },
-    {
-      title: '.Net',
-      link: 'https://codedthemes.com/item/mantis-dotnet-bootstrap-dashboard-template/'
-    }
+  type Framework = {
+    title: string;
+    link: string;
+    isUpcoming?: boolean;
+  };
+
+  const frameworks: Framework[] = [
+
   ];
 
   return (
@@ -143,7 +132,7 @@ export default function FooterBlock({ isFull }: showProps) {
                   </Grid>
                   <Grid size={12}>
                     <Typography variant="body1" sx={{ color: 'secondary.400' }}>
-                      What is next? Checkout the Upcoming release of Mantis React.
+                      What is next? Checkout the Upcoming release of React.
                     </Typography>
                   </Grid>
                   <Grid sx={{ my: 2 }} size={12}>
@@ -154,8 +143,7 @@ export default function FooterBlock({ isFull }: showProps) {
                           variant="contained"
                           endIcon={<SendOutlined />}
                           component={Link}
-                          href="https://codedthemes.gitbook.io/mantis/roadmap"
-                          target="_blank"
+                          href="#"
                         >
                           Roadmap
                         </Button>
@@ -187,7 +175,7 @@ export default function FooterBlock({ isFull }: showProps) {
                   </Grid>
                   <Grid size={12}>
                     <Typography variant="subtitle1" sx={{ fontWeight: 400, color: 'common.white' }}>
-                      Since 2017, More than 204K+ Developers trust the CodedThemes Digital Product. Mantis React is Manage under their
+                      Since 2017, More than 204K+ Developers trust the CodedThemes Digital Product. React is Manage under their
                       Experienced Team Players.
                     </Typography>
                   </Grid>
@@ -209,16 +197,16 @@ export default function FooterBlock({ isFull }: showProps) {
                       Help
                     </Typography>
                     <Stack sx={{ gap: { xs: 1.5, md: 2.5 } }}>
-                      <FooterLink href="https://blog.codedthemes.com/" target="_blank" underline="none">
+                      <FooterLink href="#"  underline="none">
                         Blog
                       </FooterLink>
-                      <FooterLink href="https://codedthemes.gitbook.io/mantis/" target="_blank" underline="none">
+                      <FooterLink href="#"  underline="none">
                         Documentation
                       </FooterLink>
-                      <FooterLink href="https://codedthemes.gitbook.io/mantis/changelog" target="_blank" underline="none">
+                      <FooterLink href="#"  underline="none">
                         Change Log
                       </FooterLink>
-                      <FooterLink href="https://codedthemes.support-hub.io/" target="_blank" underline="none">
+                      <FooterLink href="#"  underline="none">
                         Support
                       </FooterLink>
                     </Stack>
@@ -263,7 +251,7 @@ export default function FooterBlock({ isFull }: showProps) {
                         ...theme.applyStyles('dark', { color: 'text.primary' })
                       })}
                     >
-                      Mantis Eco-System
+                      Eco-System
                     </Typography>
                     <Stack sx={{ gap: { xs: 1.5, md: 2.5 } }}>
                       {frameworks.map((item, index) => (
@@ -288,17 +276,17 @@ export default function FooterBlock({ isFull }: showProps) {
                       More Products
                     </Typography>
                     <Stack sx={{ gap: { xs: 1.5, md: 2.5 } }}>
-                      <FooterLink href="https://codedthemes.com/item/mantis-free-figma-ui-kit/" target="_blank" underline="none">
-                        Free Mantis Figma UI Kit
+                      <FooterLink href="#" underline="none">
+                        Free Figma UI Kit
                       </FooterLink>
-                      <FooterLink href="http://mui.com/store/previews/berry-react-material-admin/" target="_blank" underline="none">
+                      <FooterLink href="#" underline="none">
                         Berry React Material
                       </FooterLink>
-                      <FooterLink href="https://mui.com/store/previews/berry-react-material-admin-free/" target="_blank" underline="none">
+                      <FooterLink href="#" underline="none">
                         Free Berry React
                       </FooterLink>
-                      <FooterLink href="https://github.com/codedthemes/mantis-free-react-admin-template" target="_blank" underline="none">
-                        Free Mantis React
+                      <FooterLink href="#" underline="none">
+                        Free React
                       </FooterLink>
                     </Stack>
                   </Stack>

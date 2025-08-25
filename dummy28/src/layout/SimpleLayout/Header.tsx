@@ -102,15 +102,14 @@ export default function Header() {
               <Link className="header-link" color="white" component={NextLink} href="/components-overview/buttons" underline="none">
                 Components
               </Link>
-              <Link className="header-link" color="white" href="https://codedthemes.gitbook.io/mantis/" target="_blank" underline="none">
+              <Link className="header-link" color="white" href="#"  underline="none">
                 Documentation
               </Link>
               <Box sx={{ display: 'inline-block', ml: 1 }}>
                 <AnimateButton>
                   <Button
                     component={Link}
-                    href="https://mui.com/store/items/mantis-react-admin-dashboard-template/"
-                    target="_blank"
+                    href="#"
                     disableElevation
                     color="primary"
                     variant="contained"
@@ -175,7 +174,7 @@ export default function Header() {
                         <ListItemText primary="All Components" slotProps={{ primary: { variant: 'h6', color: 'text.primary' } }} />
                       </ListItemButton>
                     </Link>
-                    <Link underline="none" href="https://github.com/codedthemes/mantis-free-react-admin-template" target="_blank">
+                    <Link underline="none" href="#">
                       <ListItemButton>
                         <ListItemIcon>
                           <LineOutlined />
@@ -183,7 +182,7 @@ export default function Header() {
                         <ListItemText primary="Free Version" slotProps={{ primary: { variant: 'h6', color: 'text.primary' } }} />
                       </ListItemButton>
                     </Link>
-                    <Link underline="none" href="https://codedthemes.gitbook.io/mantis/" target="_blank">
+                    <Link underline="none" href="#">
                       <ListItemButton>
                         <ListItemIcon>
                           <LineOutlined />
@@ -191,7 +190,7 @@ export default function Header() {
                         <ListItemText primary="Documentation" slotProps={{ primary: { variant: 'h6', color: 'text.primary' } }} />
                       </ListItemButton>
                     </Link>
-                    <Link underline="none" href="https://codedthemes.support-hub.io/" target="_blank">
+                    <Link underline="none" href="#">
                       <ListItemButton>
                         <ListItemIcon>
                           <LineOutlined />
@@ -199,7 +198,7 @@ export default function Header() {
                         <ListItemText primary="Support" slotProps={{ primary: { variant: 'h6', color: 'text.primary' } }} />
                       </ListItemButton>
                     </Link>
-                    <Link underline="none" href="https://mui.com/store/items/mantis-react-admin-dashboard-template/" target="_blank">
+                    <Link underline="none" href="#">
                       <ListItemButton>
                         <ListItemIcon>
                           <LineOutlined />

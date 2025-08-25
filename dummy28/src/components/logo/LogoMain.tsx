@@ -23,7 +23,7 @@ export default function LogoMain({ reverse }: { reverse?: boolean }) {
     /**
      * if you want to use image instead of svg uncomment following, and comment out <svg> element.
      *
-     * <Image src={theme.palette.mode === ThemeMode.DARK ? logoDark : logo} alt="Mantis" width={118} height={35} />
+     * <Image src={theme.palette.mode === ThemeMode.DARK ? logoDark : logo} alt="" width={118} height={35} />
      *
      */
     <>

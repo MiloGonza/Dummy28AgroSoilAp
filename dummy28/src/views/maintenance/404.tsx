@@ -31,11 +31,11 @@ export default function Error404() {
       <Grid size={12}>
         <Stack direction="row" sx={{ justifyContent: 'center' }}>
           <Box sx={{ width: { xs: 250, sm: 590 }, height: { xs: 130, sm: 300 } }}>
-            <CardMedia component="img" sx={{ height: 1 }} src={error404} alt="mantis" />
+            <CardMedia component="img" sx={{ height: 1 }} src={error404}/>
           </Box>
           <Box sx={{ position: 'relative' }}>
             <Box sx={{ position: 'absolute', top: 60, left: -40, width: { xs: 130, sm: 390 }, height: { xs: 115, sm: 330 } }}>
-              <CardMedia component="img" src={TwoCone} alt="mantis" sx={{ height: 1 }} />
+              <CardMedia component="img" src={TwoCone} sx={{ height: 1 }} />
             </Box>
           </Box>
         </Stack>

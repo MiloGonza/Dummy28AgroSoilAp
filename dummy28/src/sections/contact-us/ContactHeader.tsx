@@ -78,7 +78,7 @@ export default function ContactHeader() {
             </Stack>
           </Box>
           <Box sx={{ width: { xs: 320, sm: 320, md: 500, lg: 600 } }}>
-            <CardMedia component="img" src={worldMap} alt="mantis" />
+            <CardMedia component="img" src={worldMap} />
           </Box>
         </Stack>
       </Container>
