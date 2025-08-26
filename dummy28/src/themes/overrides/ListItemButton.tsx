@@ -12,7 +12,7 @@ export default function ListItemButton(theme: Theme) {
             color: theme.palette.primary.main,
             ...theme.applyStyles('dark', { color: theme.palette.primary.darker }),
             '& .MuiListItemIcon-root': {
-              color: theme.palette.primary.main
+              color: theme.palette.secondary.main
             }
           }
         }

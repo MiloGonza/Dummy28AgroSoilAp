@@ -1,4 +1,3 @@
-// material-ui
 import { PaletteColorOptions } from '@mui/material/styles';
 
 // project imports
@@ -8,7 +7,7 @@ import { ThemeMode } from 'config';
 import { PaletteThemeProps } from 'types/theme';
 import { PalettesProps } from '@ant-design/colors';
 
-// ==============================|| PRESET THEME - PURPLE THEME8 ||============================== //
+// ==============================|| PRESET THEME - CUSTOM GREEN/BLUE THEME ||============================== //
 
 export default function Theme8(colors: PalettesProps, mode: ThemeMode): PaletteThemeProps {
   const { grey } = colors;
@@ -31,16 +30,68 @@ export default function Theme8(colors: PalettesProps, mode: ThemeMode): PaletteT
     A700: grey[14],
     A800: grey[16]
   };
-  const contrastText = '#fff';
 
-  let primaryColors = ['#c1d6d066', '#81c9b9', '#5bbda9', '#38b09c', '#1aa391', '#009688', '#007069', '#004a47', '#002424', '#000000'];
+  // color principal actualizado (#0FF25A)
+  let primaryColors = [
+    '#E6FFE3', // lighter
+    '#A8FFC1', // 100
+    '#6CFF9B', // 200
+    '#3DFF79', // light
+    '#18F864', // 400
+    '#0FF25A', // main
+    '#0DC94B', // dark
+    '#0AA13B', // 700
+    '#077B2C', // darker
+    '#044D1B'  // 900
+  ];
+
+  // color secundario (azul oscuro #0F3B56)
+  let secondaryColors = [
+    '#E1ECF3',
+    '#B3CDDD',
+    '#80A9C3',
+    '#4D85A9',
+    '#266C96',
+    '#0F3B56',
+    '#0C3147',
+    '#092737',
+    '#061D29',
+    '#031317'
+  ];
+
   let errorColors = ['#FDE8E7', '#F25E52', '#F04134', '#EE3B2F', '#E92A21'];
   let warningColors = ['#FFF7E0', '#FFC926', '#FFBF00', '#FFB900', '#FFA900'];
   let infoColors = ['#E0F4F5', '#26B0BA', '#00A2AE', '#009AA7', '#008694'];
   let successColors = ['#E0F5EA', '#26B56E', '#00A854', '#00A04D', '#008D3A'];
 
   if (mode === ThemeMode.DARK) {
-    primaryColors = ['#1a2524', '#173331', '#15423e', '#11544e', '#0b6c63', '#058478', '#1a9686', '#37a996', '#59b8a5', '#7fc6b6'];
+    // variantes para dark mode
+    primaryColors = [
+      '#1A3320',
+      '#145A2F',
+      '#0F803E',
+      '#0BB44E',
+      '#0DC94B',
+      '#0FF25A',
+      '#34F673',
+      '#67FA97',
+      '#9BFDBA',
+      '#D0FFDC'
+    ];
+
+    secondaryColors = [
+      '#132D3F',
+      '#17415C',
+      '#1C5679',
+      '#206A96',
+      '#267EB3',
+      '#0F3B56',
+      '#3991D1',
+      '#64ADE0',
+      '#9CCBF0',
+      '#D0E6F9'
+    ];
+
     errorColors = ['#321d1d', '#7d2e28', '#d13c31', '#e66859', '#f8baaf'];
     warningColors = ['#342c1a', '#836611', '#dda705', '#e9bf28', '#f8e577'];
     infoColors = ['#1a2628', '#11595f', '#058e98', '#1ea6aa', '#64cfcb'];
@@ -54,28 +105,25 @@ export default function Theme8(colors: PalettesProps, mode: ThemeMode): PaletteT
       200: primaryColors[2],
       light: primaryColors[3],
       400: primaryColors[4],
-      main: primaryColors[5],
+      main: primaryColors[5],  // #0FF25A
       dark: primaryColors[6],
       700: primaryColors[7],
       darker: primaryColors[8],
       900: primaryColors[9],
-      contrastText
+      contrastText: '#000'     // <- texto negro para contraste
     },
     secondary: {
-      lighter: greyColors[100],
-      100: greyColors[100],
-      200: greyColors[200],
-      light: greyColors[300],
-      400: greyColors[400],
-      main: greyColors[500]!,
-      600: greyColors[600],
-      dark: greyColors[700],
-      800: greyColors[800],
-      darker: greyColors[900],
-      A100: greyColors[0],
-      A200: greyColors.A400,
-      A300: greyColors.A700,
-      contrastText: greyColors[0]
+      lighter: secondaryColors[0],
+      100: secondaryColors[1],
+      200: secondaryColors[2],
+      light: secondaryColors[3],
+      400: secondaryColors[4],
+      main: secondaryColors[5],  // #0F3B56
+      dark: secondaryColors[6],
+      700: secondaryColors[7],
+      darker: secondaryColors[8],
+      900: secondaryColors[9],
+      contrastText: '#fff'
     },
     error: {
       lighter: errorColors[0],
@@ -83,7 +131,7 @@ export default function Theme8(colors: PalettesProps, mode: ThemeMode): PaletteT
       main: errorColors[2],
       dark: errorColors[3],
       darker: errorColors[4],
-      contrastText
+      contrastText: '#fff'
     },
     warning: {
       lighter: warningColors[0],
@@ -99,7 +147,7 @@ export default function Theme8(colors: PalettesProps, mode: ThemeMode): PaletteT
       main: infoColors[2],
       dark: infoColors[3],
       darker: infoColors[4],
-      contrastText
+      contrastText: '#fff'
     },
     success: {
       lighter: successColors[0],
@@ -107,8 +155,22 @@ export default function Theme8(colors: PalettesProps, mode: ThemeMode): PaletteT
       main: successColors[2],
       dark: successColors[3],
       darker: successColors[4],
-      contrastText
+      contrastText: '#fff'
     },
-    grey: greyColors
+    grey: greyColors,
+    // override para botones
+    components: {
+      MuiButton: {
+        styleOverrides: {
+          containedPrimary: {
+            backgroundColor: '#0FF25A',
+            color: '#000', // texto negro
+            '&:hover': {
+              backgroundColor: '#0DC94B'
+            }
+          }
+        }
+      }
+    }
   };
 }
