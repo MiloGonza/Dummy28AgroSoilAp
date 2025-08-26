@@ -30,7 +30,7 @@ const pages: NavItemType = {
       id: 'estudiosSuelo',
       title: 'Estudios de Suelo',
       type: 'item',
-      url: '/FloorStudies',
+      url: '/study',
       icon: icons.Study,
     }
   ]
