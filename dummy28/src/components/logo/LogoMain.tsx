@@ -11,7 +11,7 @@ export default function LogoIcon() {
       height="129"
       style={{
         position: 'absolute', // 🔹 no afecta layout
-        top: -70,
+        top: -50,
         left: 16
       }}
       preserveAspectRatio="xMidYMid meet"
