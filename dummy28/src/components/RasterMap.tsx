@@ -3,7 +3,7 @@
 import { use, useEffect } from "react";
 import dynamic from "next/dynamic";
 import "leaflet/dist/leaflet.css";
-import { red } from "@ant-design/colors";
+//import { red } from "@ant-design/colors";
 
 const MapContainer = dynamic(
   async () => (await import("react-leaflet")).MapContainer,
