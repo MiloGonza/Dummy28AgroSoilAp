@@ -6,10 +6,12 @@ import Grid from '@mui/material/Grid';
 import React, { useState } from 'react';
 import { NavItemType } from 'types/menu';
 
+
 //icons
 import RocketOutlined from '@ant-design/icons/RocketOutlined';
 import Dashboard from '@ant-design/icons/DashboardOutlined';
 import Study from '@ant-design/icons/BookOutlined';
+import RasterMap from 'components/RasterMap';
 
 const icons = { RocketOutlined, Dashboard, Study };
 
@@ -63,7 +65,8 @@ export default function FloorStudies() {
               color: 'secondary.contrastText',
               p: 2,
               textAlign: 'center',}}>
-                 Contenido principal
+                 Mapa
+                 <RasterMap />
             </Box>
         </Grid>
       </Grid>
