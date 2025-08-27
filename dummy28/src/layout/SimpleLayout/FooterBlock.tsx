@@ -305,7 +305,7 @@ export default function FooterBlock({ isFull }: showProps) {
             <Grid size={{ xs: 12, sm: 6 }}>
               <Typography variant="subtitle2" color="secondary" sx={{ textAlign: { xs: 'center', sm: 'left' } }}>
                 © Made with love by Team{' '}
-                <Link href="https://codedthemes.com/" target="_blank" underline="hover">
+                <Link href="#" target="_blank" underline="hover">
                   CodedThemes
                 </Link>
               </Typography>
@@ -313,47 +313,47 @@ export default function FooterBlock({ isFull }: showProps) {
             <Grid size={{ xs: 12, sm: 6 }}>
               <Grid container spacing={{ xs: 2.25, md: 3 }} alignItems="center" sx={{ justifyContent: { xs: 'center', sm: 'flex-end' } }}>
                 <Grid>
-                  <Link href="https://github.com/codedthemes" underline="none" target="_blank" sx={linkSX}>
+                  <Link href="#" underline="none" target="_blank" sx={linkSX}>
                     <GithubFilled />
                   </Link>
                 </Grid>
                 <Grid>
-                  <Link href="https://www.instagram.com/codedthemes" underline="none" target="_blank" sx={linkSX}>
+                  <Link href="#" underline="none" target="_blank" sx={linkSX}>
                     <InstagramFilled />
                   </Link>
                 </Grid>
                 <Grid>
-                  <Link href="https://discord.com/invite/p2E2WhCb6s" underline="none" target="_blank" sx={linkSX}>
+                  <Link href="#" underline="none" target="_blank" sx={linkSX}>
                     <DiscordFilled />
                   </Link>
                 </Grid>
                 <Grid>
-                  <Link href="https://www.youtube.com/channel/UCiZG__BaRkT1OuZl5ifzO6A" underline="none" target="_blank" sx={linkSX}>
+                  <Link href="#" underline="none" target="_blank" sx={linkSX}>
                     <YoutubeFilled />
                   </Link>
                 </Grid>
                 <Grid>
-                  <Link href="https://x.com/codedthemes/" underline="none" target="_blank" sx={linkSX}>
+                  <Link href="#" underline="none" target="_blank" sx={linkSX}>
                     <XOutlined />
                   </Link>
                 </Grid>
                 <Grid>
-                  <Link href="https://www.linkedin.com/company/codedthemes" underline="none" target="_blank" sx={linkSX}>
+                  <Link href="#" underline="none" target="_blank" sx={linkSX}>
                     <LinkedinFilled />
                   </Link>
                 </Grid>
                 <Grid>
-                  <Link href="https://www.facebook.com/codedthemes/" underline="none" target="_blank" sx={linkSX}>
+                  <Link href="#" underline="none" target="_blank" sx={linkSX}>
                     <FacebookFilled />
                   </Link>
                 </Grid>
                 <Grid>
-                  <Link href="https://dribbble.com/codedthemes" underline="none" target="_blank" sx={linkSX}>
+                  <Link href="#" underline="none" target="_blank" sx={linkSX}>
                     <DribbbleSquareFilled />
                   </Link>
                 </Grid>
                 <Grid>
-                  <Link href="https://www.figma.com/@codedthemes" underline="none" target="_blank" sx={linkSX}>
+                  <Link href="#" underline="none" target="_blank" sx={linkSX}>
                     <Box
                       sx={(theme) => ({
                         p: 0.05,
