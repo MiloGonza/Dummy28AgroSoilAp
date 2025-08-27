@@ -81,7 +81,7 @@ export default function NavItem({ item, level, isParents = false, setSelectedID 
   }, [pathname]);
 
   const textColor = mode === ThemeMode.DARK ? 'grey.400' : 'text.primary';
-  const iconSelectedColor = mode === ThemeMode.DARK && drawerOpen ? 'text.primary' : 'primary.main';
+  const iconSelectedColor = mode === ThemeMode.DARK && drawerOpen ? 'text.primary' : 'secondary.main';
 
   return (
     <>
