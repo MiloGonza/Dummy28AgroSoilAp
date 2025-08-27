@@ -4,13 +4,12 @@ import { Button } from '@mui/material';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import React, { useState } from 'react';
-import { NavItemType } from 'types/menu';
-
 
 //icons
 import RocketOutlined from '@ant-design/icons/RocketOutlined';
 import Dashboard from '@ant-design/icons/DashboardOutlined';
 import Study from '@ant-design/icons/BookOutlined';
+//import { RasterMap } from 'components/RasterMap';
 import RasterMap from 'components/RasterMap';
 
 const icons = { RocketOutlined, Dashboard, Study };
