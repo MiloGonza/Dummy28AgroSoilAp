@@ -7,7 +7,6 @@ import "./DasboardStyle.css";
 import { useState } from 'react';
 import PieWeatherComponent from 'components/weather/PieWeatherComponent';
 import LineGroundComponent from 'components/weather/LineGroundComponent';
-import { s } from 'framer-motion/dist/types.d-DDSxwf0n';
 
 
 // ==============================|| SAMPLE PAGE ||============================== //
