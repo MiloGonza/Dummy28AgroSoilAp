@@ -30,6 +30,7 @@
     "next-auth": "4.24.11",
     "notistack": "3.0.2",
     "react": "19.1.0",
+    "react-chartjs-2": "^5.3.0",
     "react-device-detect": "2.2.3",
     "react-dom": "19.1.0",
     "react-intl": "7.1.11",
