@@ -6,30 +6,22 @@ export default function LogoIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 200 60" // 🔹 recortado al tamaño real del logo
-      width="129"
-      height="129"
+      viewBox="0 0 120 80" // 🔹 ajustado al espacio real del ícono
+      width="64"
+      height="64"
       style={{
-        position: 'absolute', // 🔹 no afecta layout
-        top: 16,
-        left: 16
+        position: 'absolute',
+        top: -10,
+        left: 5
       }}
       preserveAspectRatio="xMidYMid meet"
     >
-      {/* Texto */}
-      <text
-        x="0"
-        y="0"
-        fontFamily="Arial, sans-serif"
-        fontSize="32"
-        fontWeight="bold"
-        fill="#0f3b56"
+      <g
+        transform="translate(0,10) scale(0.5)"
+        stroke="#0FF25A"
+        fill="none"
+        strokeWidth="2"
       >
-        vizcrop
-      </text>
-
-      {/* Ícono */}
-      <g transform="translate(120,10) scale(0.5)" stroke="#0FF25A" fill="none" strokeWidth="2">
         <path d="M60 20 L75 10 L90 20 V60 H60 Z" />
         <rect x="70" y="30" width="10" height="15" fill="none" />
 
