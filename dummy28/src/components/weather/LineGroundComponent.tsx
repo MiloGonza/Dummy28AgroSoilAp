@@ -25,6 +25,7 @@ function LineGroundComponent({ setSoilData }: { setSoilData?: (data: any) => voi
         const response = await GET();
         const data = await response.json();
         setSoilData && setSoilData(data);
+        console.log(data, "datos del suelo");
 
         // Buscar capas de textura
         const sandLayer = data.properties.layers.find((l: any) => l.name === "sand");
