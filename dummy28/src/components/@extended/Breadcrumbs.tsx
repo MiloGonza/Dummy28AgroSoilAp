@@ -71,7 +71,7 @@ export default function Breadcrumbs({
   ...others
 }: Props) {
   const theme = useTheme();
-  const location = usePathname();
+  //const location = usePathname();
 
   const [main, setMain] = useState<NavItemType | undefined>();
   const [item, setItem] = useState<NavItemType>();
@@ -89,7 +89,7 @@ export default function Breadcrumbs({
   useEffect(() => {
     navigation?.items?.map((menu: NavItemType) => {
       if (menu.type && menu.type === 'group') {
-        if (menu?.url && menu.url === customLocation) {
+        if (menu?.url /*&& menu.url === customLocation*/) {
           setMain(menu);
           setItem(menu);
         } else {
@@ -106,15 +106,15 @@ export default function Breadcrumbs({
       menu.children.filter((collapse: NavItemType) => {
         if (collapse.type && collapse.type === 'collapse') {
           getCollapse(collapse as { children: NavItemType[]; type?: string });
-          if (collapse.url === customLocation) {
+          /*if (collapse.url === customLocation) {
             setMain(collapse);
             setItem(collapse);
-          }
+          }*/
         } else if (collapse.type && collapse.type === 'item') {
-          if (customLocation === collapse.url) {
+          /*if (customLocation === collapse.url) {
             setMain(menu);
             setItem(collapse);
-          }
+          }*/
         }
         return false;
       });
