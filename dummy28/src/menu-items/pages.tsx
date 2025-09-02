@@ -24,14 +24,14 @@ const pages: NavItemType = {
       title: 'Dashboard',
       type: 'item',
       url: '/dashboard',
-      icon: icons.Dashboard,
+      icon: icons.Dashboard
     },
     {
       id: 'estudiosSuelo',
       title: 'Estudios de Suelo',
       type: 'item',
       url: '/study',
-      icon: icons.Study,
+      icon: icons.Study
     }
   ]
 };

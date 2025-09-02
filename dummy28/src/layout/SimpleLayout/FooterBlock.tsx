@@ -68,9 +68,7 @@ export default function FooterBlock({ isFull }: showProps) {
     isUpcoming?: boolean;
   };
 
-  const frameworks: Framework[] = [
-
-  ];
+  const frameworks: Framework[] = [];
 
   return (
     <>
@@ -138,13 +136,7 @@ export default function FooterBlock({ isFull }: showProps) {
                   <Grid sx={{ my: 2 }} size={12}>
                     <Box sx={{ display: 'inline-block' }}>
                       <AnimateButton>
-                        <Button
-                          size="large"
-                          variant="contained"
-                          endIcon={<SendOutlined />}
-                          component={Link}
-                          href="#"
-                        >
+                        <Button size="large" variant="contained" endIcon={<SendOutlined />} component={Link} href="#">
                           Roadmap
                         </Button>
                       </AnimateButton>
@@ -175,8 +167,8 @@ export default function FooterBlock({ isFull }: showProps) {
                   </Grid>
                   <Grid size={12}>
                     <Typography variant="subtitle1" sx={{ fontWeight: 400, color: 'common.white' }}>
-                      Since 2017, More than 204K+ Developers trust the CodedThemes Digital Product. React is Manage under their
-                      Experienced Team Players.
+                      Since 2017, More than 204K+ Developers trust the CodedThemes Digital Product. React is Manage under their Experienced
+                      Team Players.
                     </Typography>
                   </Grid>
                 </Grid>
@@ -197,16 +189,16 @@ export default function FooterBlock({ isFull }: showProps) {
                       Help
                     </Typography>
                     <Stack sx={{ gap: { xs: 1.5, md: 2.5 } }}>
-                      <FooterLink href="#"  underline="none">
+                      <FooterLink href="#" underline="none">
                         Blog
                       </FooterLink>
-                      <FooterLink href="#"  underline="none">
+                      <FooterLink href="#" underline="none">
                         Documentation
                       </FooterLink>
-                      <FooterLink href="#"  underline="none">
+                      <FooterLink href="#" underline="none">
                         Change Log
                       </FooterLink>
-                      <FooterLink href="#"  underline="none">
+                      <FooterLink href="#" underline="none">
                         Support
                       </FooterLink>
                     </Stack>

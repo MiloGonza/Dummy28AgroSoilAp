@@ -17,14 +17,7 @@ export default function LogoIcon() {
       preserveAspectRatio="xMidYMid meet"
     >
       {/* Texto */}
-      <text
-        x="0"
-        y="40"
-        fontFamily="Arial, sans-serif"
-        fontSize="32"
-        fontWeight="bold"
-        fill="#0f3b56"
-      >
+      <text x="0" y="40" fontFamily="Arial, sans-serif" fontSize="32" fontWeight="bold" fill="#0f3b56">
         vizcrop
       </text>
 

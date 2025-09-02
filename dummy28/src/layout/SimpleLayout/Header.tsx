@@ -102,18 +102,12 @@ export default function Header() {
               <Link className="header-link" color="white" component={NextLink} href="/components-overview/buttons" underline="none">
                 Components
               </Link>
-              <Link className="header-link" color="white" href="#"  underline="none">
+              <Link className="header-link" color="white" href="#" underline="none">
                 Documentation
               </Link>
               <Box sx={{ display: 'inline-block', ml: 1 }}>
                 <AnimateButton>
-                  <Button
-                    component={Link}
-                    href="#"
-                    disableElevation
-                    color="primary"
-                    variant="contained"
-                  >
+                  <Button component={Link} href="#" disableElevation color="primary" variant="contained">
                     Purchase Now
                   </Button>
                 </AnimateButton>

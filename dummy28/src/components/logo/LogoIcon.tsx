@@ -16,12 +16,7 @@ export default function LogoIcon() {
       }}
       preserveAspectRatio="xMidYMid meet"
     >
-      <g
-        transform="translate(0,10) scale(0.5)"
-        stroke="#0FF25A"
-        fill="none"
-        strokeWidth="2"
-      >
+      <g transform="translate(0,10) scale(0.5)" stroke="#0FF25A" fill="none" strokeWidth="2">
         <path d="M60 20 L75 10 L90 20 V60 H60 Z" />
         <rect x="70" y="30" width="10" height="15" fill="none" />
 

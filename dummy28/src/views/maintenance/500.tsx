@@ -28,7 +28,7 @@ export default function Error500() {
       <Grid size={12}>
         <Stack sx={{ alignItems: 'center', justifyContent: 'center' }}>
           <Box sx={{ width: { xs: 350, sm: 396 }, my: 2 }}>
-            <CardMedia component="img" src={error500}/>
+            <CardMedia component="img" src={error500} />
           </Box>
           <Typography align="center" variant={downSM ? 'h2' : 'h1'}>
             Internal Server Error

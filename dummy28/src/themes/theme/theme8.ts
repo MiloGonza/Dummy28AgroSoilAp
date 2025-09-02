@@ -42,22 +42,11 @@ export default function Theme8(colors: PalettesProps, mode: ThemeMode): PaletteT
     '#0DC94B', // dark
     '#0AA13B', // 700
     '#077B2C', // darker
-    '#044D1B'  // 900
+    '#044D1B' // 900
   ];
 
   // color secundario (azul oscuro #0F3B56)
-  let secondaryColors = [
-    '#E1ECF3',
-    '#B3CDDD',
-    '#80A9C3',
-    '#4D85A9',
-    '#266C96',
-    '#0F3B56',
-    '#0C3147',
-    '#092737',
-    '#061D29',
-    '#031317'
-  ];
+  let secondaryColors = ['#E1ECF3', '#B3CDDD', '#80A9C3', '#4D85A9', '#266C96', '#0F3B56', '#0C3147', '#092737', '#061D29', '#031317'];
 
   let errorColors = ['#FDE8E7', '#F25E52', '#F04134', '#EE3B2F', '#E92A21'];
   let warningColors = ['#FFF7E0', '#FFC926', '#FFBF00', '#FFB900', '#FFA900'];
@@ -66,31 +55,9 @@ export default function Theme8(colors: PalettesProps, mode: ThemeMode): PaletteT
 
   if (mode === ThemeMode.DARK) {
     // variantes para dark mode
-    primaryColors = [
-      '#1A3320',
-      '#145A2F',
-      '#0F803E',
-      '#0BB44E',
-      '#0DC94B',
-      '#0FF25A',
-      '#34F673',
-      '#67FA97',
-      '#9BFDBA',
-      '#D0FFDC'
-    ];
+    primaryColors = ['#1A3320', '#145A2F', '#0F803E', '#0BB44E', '#0DC94B', '#0FF25A', '#34F673', '#67FA97', '#9BFDBA', '#D0FFDC'];
 
-    secondaryColors = [
-      '#132D3F',
-      '#17415C',
-      '#1C5679',
-      '#206A96',
-      '#267EB3',
-      '#0F3B56',
-      '#3991D1',
-      '#64ADE0',
-      '#9CCBF0',
-      '#D0E6F9'
-    ];
+    secondaryColors = ['#132D3F', '#17415C', '#1C5679', '#206A96', '#267EB3', '#0F3B56', '#3991D1', '#64ADE0', '#9CCBF0', '#D0E6F9'];
 
     errorColors = ['#321d1d', '#7d2e28', '#d13c31', '#e66859', '#f8baaf'];
     warningColors = ['#342c1a', '#836611', '#dda705', '#e9bf28', '#f8e577'];
@@ -105,12 +72,12 @@ export default function Theme8(colors: PalettesProps, mode: ThemeMode): PaletteT
       200: primaryColors[2],
       light: primaryColors[3],
       400: primaryColors[4],
-      main: primaryColors[5],  // #0FF25A
+      main: primaryColors[5], // #0FF25A
       dark: primaryColors[6],
       700: primaryColors[7],
       darker: primaryColors[8],
       900: primaryColors[9],
-      contrastText: '#000'     // <- texto negro para contraste
+      contrastText: '#000' // <- texto negro para contraste
     },
     secondary: {
       lighter: secondaryColors[0],
@@ -118,7 +85,7 @@ export default function Theme8(colors: PalettesProps, mode: ThemeMode): PaletteT
       200: secondaryColors[2],
       light: secondaryColors[3],
       400: secondaryColors[4],
-      main: secondaryColors[5],  // #0F3B56
+      main: secondaryColors[5], // #0F3B56
       dark: secondaryColors[6],
       700: secondaryColors[7],
       darker: secondaryColors[8],

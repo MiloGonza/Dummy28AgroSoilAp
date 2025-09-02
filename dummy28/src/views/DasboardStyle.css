@@ -13,7 +13,7 @@
 .container {
   display: flex;
   flex-wrap: nowrap; /* por defecto, no se wrappea */
-  max-height: 180px;
+  max-height: 250px;
 }
 
 .item {
@@ -27,7 +27,7 @@
 }
 
 .venezuelaContainer {
-    height: 180px;
+    height: 250px;
     max-width: 20%;
     display: flex;
     flex-direction: column;

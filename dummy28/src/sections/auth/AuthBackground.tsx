@@ -25,20 +25,13 @@ export default function AuthBackground() {
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 900 300"   // 🔹 ajustado, no tan grande
+        viewBox="0 0 900 300" // 🔹 ajustado, no tan grande
         width="100%"
         height="100%"
         preserveAspectRatio="xMidYMid meet"
       >
         <g transform="translate(50,180)">
-          <text
-            x="0"
-            y="0"
-            fontFamily="Arial, sans-serif"
-            fontSize="120"
-            fontWeight="bold"
-            fill="#0f3b56"
-          >
+          <text x="0" y="0" fontFamily="Arial, sans-serif" fontSize="120" fontWeight="bold" fill="#0f3b56">
             vizcrop
           </text>
 

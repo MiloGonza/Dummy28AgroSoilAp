@@ -72,8 +72,7 @@ export default function DashboardLayout({ children }: Props) {
           >
             {pathname !== '/apps/profiles/account/my-account' && <Breadcrumbs />}
             {children}
-            
-            
+
             <Footer />
           </Container>
         </Box>
