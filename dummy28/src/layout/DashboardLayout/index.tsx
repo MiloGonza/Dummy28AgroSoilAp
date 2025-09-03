@@ -16,7 +16,7 @@ import Box from '@mui/material/Box';
 // project imports
 import Drawer from './Drawer';
 import Header from './Header';
-import Footer from './Footer';
+// import Footer from './Footer';
 import HorizontalBar from './Drawer/HorizontalBar';
 import Loader from 'components/Loader';
 import Breadcrumbs from 'components/@extended/Breadcrumbs';
@@ -73,7 +73,7 @@ export default function DashboardLayout({ children }: Props) {
             {pathname !== '/apps/profiles/account/my-account' && <Breadcrumbs />}
             {children}
 
-            <Footer />
+            {/* <Footer /> */}
           </Container>
         </Box>
       </Stack>

@@ -1,13 +1,14 @@
-.dashboardContainer{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.dashboardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .metricCardsContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); */
+  gap: 16px;
 }
 
 .container {
@@ -20,107 +21,124 @@
   flex-basis: 20%; /* establece un tamaño mínimo para cada elemento */
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .container {
     flex-wrap: wrap; /* cuando el espacio sea menor a 400px, se wrappea */
+    max-height: none;
+  }
+
+  .item {
+    flex-basis: 100%; /* establece un tamaño igual para cada elemento */
+  }
+}
+
+@media (max-width: 997px) {
+  .metricCardsContainer {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   }
 }
 
 .venezuelaContainer {
-    height: 250px;
-    max-width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ccc;
-    border-radius: 1.5rem;
-    margin-right: 16px;
-    transition: all 0.2s ease-in-out;
-    gap: 15px;
-    padding: 20px 20px;
-    overflow: auto;
+  height: 250px;
+  /* max-width: 20%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 1.5rem;
+  margin-right: 16px;
+  transition: all 0.2s ease-in-out;
+  gap: 15px;
+  padding: 20px 20px;
+  overflow: auto;
 }
 
 .venezuelaContainer::-webkit-scrollbar {
-    width: 5px;
+  width: 5px;
 }
 
 .tempContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .temp {
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #0FF25A;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0ff25a;
 }
 
-.title{
-    text-wrap: wrap;
-    text-align: center;
+.title {
+  text-wrap: wrap;
+  text-align: center;
 }
 
 .venezuelaContainer:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .barWeatherComponentContainer {
-    /* height: 200px; */
-    width: 80%;
+  /* height: 200px; */
+  flex-basis: 80%;
 }
 
 .pieWeatherComponentContainer {
-    height: 250px;
-    width: 100%;
+  height: 250px;
+  width: 100%;
 }
 
 .lineGroundComponentContainer {
-    height: 250px;
-    width: 100%;
+  height: 250px;
+  width: 100%;
 }
 
-.interpretationsContainer{
-    height: 250px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 1.5rem;
+.interpretationsContainer {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
 }
 
-.noInterpretations{
-    text-align: center;
-    color: #555;
-    padding: 20px;
+.noInterpretations {
+  text-align: center;
+  color: #555;
+  padding: 20px;
 }
 
-.primaryColor{
-    color: #0FF25A;
+.primaryColor {
+  color: #0ff25a;
 }
 
-.topCardsContainer{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+.topCardsContainer {
+  display: flex;
+  /* grid-template-columns: repeat(3, 1fr); */
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center;
 }
 
-.dataCard{
-    height: 50px;
-    border: 1px solid #ccc;
-    border-radius: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s ease-in-out;
+.dataCard {
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  width: 30%;
+  /* text-wrap: wrap; */
+  min-width: 300px ;
 }
 
 .dataCard:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
