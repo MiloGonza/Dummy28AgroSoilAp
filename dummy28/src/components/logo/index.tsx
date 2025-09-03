@@ -22,7 +22,7 @@ interface Props {
 export default function LogoSection({ reverse, isIcon, sx, to }: Props) {
   return (
     <ButtonBase disableRipple component={NextLink} href={to || APP_DEFAULT_PATH} sx={sx}>
-      {isIcon ? <LogoIcon /> : <LogoMain reverse={reverse} />}
+      {isIcon ? <LogoIcon /> : <LogoMain /*reverse={reverse}*/ />}
     </ButtonBase>
   );
 }
