@@ -1,7 +1,7 @@
-import { useTheme } from '@mui/material/styles';
+// import { useTheme } from '@mui/material/styles';
 
 export default function LogoIcon() {
-  const theme = useTheme();
+  // const theme = useTheme();
 
   return (
     <svg

@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+// import { useMemo } from 'react';
 
 // material-ui
 import { Theme } from '@mui/material/styles';
@@ -7,11 +7,11 @@ import Box from '@mui/material/Box';
 
 // project imports
 import Search from './Search';
-import Message from './Message';
+// import Message from './Message';
 import Profile from './Profile';
-import Localization from './Localization';
-import Notification from './Notification';
-import FullScreen from './FullScreen';
+// import Localization from './Localization';
+// import Notification from './Notification';
+// import FullScreen from './FullScreen';
 import MobileSection from './MobileSection';
 
 import useConfig from 'hooks/useConfig';
@@ -25,7 +25,7 @@ export default function HeaderContent() {
 
   const downLG = useMediaQuery((theme: Theme) => theme.breakpoints.down('lg'));
 
-  const localization = useMemo(() => <Localization />, []);
+  // const localization = useMemo(() => <Localization />, []);
 
   return (
     <>

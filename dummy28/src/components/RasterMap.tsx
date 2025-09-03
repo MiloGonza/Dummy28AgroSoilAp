@@ -1,15 +1,15 @@
 'use client';
 
-import { use, useEffect } from 'react';
-import dynamic from 'next/dynamic';
+import { /*use,*/ useEffect } from 'react';
+// import dynamic from 'next/dynamic';
 import 'leaflet/dist/leaflet.css';
 //import { red } from "@ant-design/colors";
 
-const MapContainer = dynamic(async () => (await import('react-leaflet')).MapContainer, { ssr: false });
+// const MapContainer = dynamic(async () => (await import('react-leaflet')).MapContainer, { ssr: false });
 
-const TileLayer = dynamic(async () => (await import('react-leaflet')).TileLayer, {
-  ssr: false
-});
+// const TileLayer = dynamic(async () => (await import('react-leaflet')).TileLayer, {
+//   ssr: false
+// });
 
 export default function RasterMap() {
   useEffect(() => {

@@ -19,7 +19,7 @@ import Dot from 'components/@extended/Dot';
 import IconButton from 'components/@extended/IconButton';
 
 // third-party
-import { FormattedMessage } from 'react-intl';
+// import { FormattedMessage } from 'react-intl';
 
 import { MenuOrientation, ThemeMode, NavActionType } from 'config';
 import useConfig from 'hooks/useConfig';

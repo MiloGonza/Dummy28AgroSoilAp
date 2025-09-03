@@ -4,7 +4,7 @@ import { ReactElement, useEffect, useState } from 'react';
 
 // next
 import NextLink from 'next/link';
-import { usePathname } from 'next/navigation';
+// import { usePathname } from 'next/navigation';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
@@ -84,7 +84,7 @@ export default function Breadcrumbs({
     color: theme.palette.secondary.main
   };
 
-  const customLocation = location;
+  // const customLocation = location;
 
   useEffect(() => {
     navigation?.items?.map((menu: NavItemType) => {
