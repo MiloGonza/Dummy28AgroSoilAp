@@ -11,6 +11,19 @@ export type PaletteThemeProps = {
   info: SimplePaletteColorOptions;
   success: SimplePaletteColorOptions;
   grey: PaletteColorOptions;
+  components?: {
+    MuiButton: {
+      styleOverrides: {
+        containedPrimary: {
+          backgroundColor: string;
+          color: string;
+          '&:hover': {
+            backgroundColor: string;
+          };
+        };
+      };
+    };
+  };
 };
 
 export type CustomShadowProps = {
